@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>N I M H</title>
+
+	<!--Pour l'ajustement sur les périphériques mobiles-->
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+
+	<!--Style pour le body-->
+	<style type="text/css">
+		* {
+			padding: 0px;
+			margin: 0px;
+		}
+
+		canvas {
+			border: 1px solid black;
+		}
+
+		#pause{
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-color: #337160;
+			background-image: url(media/img/pause.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			z-index: 1000;
+			display: none;
+		}
+
+		html{
+			background-color: #a1d3a2;
+		}
+	</style>
+
+	<link rel="shortcut icon" href="media/img/icon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="media/img/icon/favicon.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="media/img/icon/favicon-32.png" type="image/png">
+	<link rel="icon" sizes="64x64" href="media/img/icon/favicon-64.png" type="image/png">
+	<link rel="icon" sizes="96x96" href="media/img/icon/favicon-96.png" type="image/png">
+	<link rel="icon" sizes="196x196" href="media/img/icon/favicon-196.png" type="image/png">
+	<link rel="apple-touch-icon" sizes="152x152" href="media/img/icon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="media/img/icon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="media/img/icon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="media/img/icon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="media/img/icon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="media/img/icon/apple-touch-icon-144x144.png">
+	<meta name="msapplication-TileImage" content="favicon-144.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	
+	<!--Librairie Phaser non minifié à partir d'un serveur CDN'-->
+	<script src="//cdn.jsdelivr.net/npm/phaser@3.22.0/dist/phaser.js"></script>
+
+	<!--Scripts du jeu / Module principal...-->
+	<script src="js/jeuTp1.js" type="module"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	
+
+</head>
+
+<body>
+
+	<div id="pause"></div>
+	
+
+</body>
+
+</html>
